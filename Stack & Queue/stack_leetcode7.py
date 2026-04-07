@@ -13,13 +13,7 @@ class MyQueue:
     def dequeue(self):
         if self.is_empty():
             return None
-        while len(self.stack1) > 0:
-            self.stack2.append(self.stack1.pop())
-        temp=self.stack2.pop()
-        while len(self.stack2) > 0:
-            self.stack1.append(self.stack2.pop())
-        return temp
-        
+        return self.stack1.pop()
     # WRITE DEQUEUE MEHTOD HERE #
     #                           #
     #                           #
