@@ -1,0 +1,14 @@
+#size=7
+prime_number=23
+class HashTable:
+    def __init__(self,size):
+        self.data_map=[None]*size
+
+    def __hash(self,key):
+        my_hash=0
+        for letter in key:
+            my_hash= (my_hash + ord(letter)*prime_number)%len(self.data_map)
+        return my_hash
+    
+my_hash_table=HashTable(7)
+my_hash_table.print_table()

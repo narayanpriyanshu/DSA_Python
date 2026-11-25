@@ -10,3 +10,6 @@ class BinaraySearchTree:
     #CREATES AN EMPTY FREE WITH NO NODES
     def __init__(self):
         self.root=None
+
+my_tree=BinaraySearchTree()
+print(my_tree.root)
